@@ -5,7 +5,7 @@ public class SceneLoader : MonoBehaviour
 {
     public void OnClickStart()
     {
-        SceneManager.LoadScene("Level", LoadSceneMode.Single);
+        SceneManager.LoadScene("Level");
     }
 
     public void OnClickExit()
