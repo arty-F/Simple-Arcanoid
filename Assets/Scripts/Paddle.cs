@@ -7,7 +7,7 @@ public class Paddle : MonoBehaviour
     bool isLaunched = false;
 
     const float yPos = -11.5f;
-    const float yBallPos = -10.5f;
+    const float yBallPos = -10.35f;
     float xMin = -13;
     float xMax = 13;
 
