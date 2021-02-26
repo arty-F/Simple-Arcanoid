@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9086845386286816155}
   - component: {fileID: 9086845386286816158}
   m_Layer: 0
-  m_Name: RedBlockFull
+  m_Name: Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,3 +122,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735f32a3db36d1f45a67c02be6538ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DestroyingSound: {fileID: 8300000, guid: 15641fa07bc95cb41b3c728a3798fd46, type: 3}

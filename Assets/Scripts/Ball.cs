@@ -13,11 +13,20 @@ public class Ball : MonoBehaviour
     [SerializeField]
     AudioClip[] ballCollisionSounds;
 
+    AudioSource audioSource;
+    public Rigidbody2D BallRigidbody { get; private set; }
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        BallRigidbody = GetComponent<Rigidbody2D>();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (Enum.TryParse(collision.gameObject.name, out CollisionObjects obj))
         {
-            GetComponent<AudioSource>().PlayOneShot(obj switch
+            audioSource.PlayOneShot(obj switch
             {
                 CollisionObjects.Paddle => GetRandomClip(paddleCollisionSounds),
                 CollisionObjects.Ball => GetRandomClip(ballCollisionSounds),

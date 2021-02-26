@@ -28,7 +28,7 @@ public class Paddle : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 isLaunched = true;
-                ball.GetComponent<Rigidbody2D>().velocity = new Vector2(5, 25);
+                ball.BallRigidbody.velocity = new Vector2(5, 25);
             }
         }
     }
