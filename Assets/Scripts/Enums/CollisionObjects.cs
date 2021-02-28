@@ -7,6 +7,6 @@
         Block,
         RightWall,
         LeftWall,
-        TopWall
+        TopWall,
     }
 }

@@ -123,3 +123,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyingSound: {fileID: 8300000, guid: 15641fa07bc95cb41b3c728a3798fd46, type: 3}
+  pointsReward: 1

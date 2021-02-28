@@ -4,16 +4,19 @@ public class Block : MonoBehaviour
 {
     [SerializeField]
     AudioClip DestroyingSound;
-    LevelManager levelManager;
+    [SerializeField]
+    int pointsReward;
+
+    LevelController levelManager;
 
     private void Start()
     {
-        levelManager = FindObjectOfType<LevelManager>();
+        levelManager = FindObjectOfType<LevelController>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        levelManager.OnCollisionEnter();
+        levelManager.OnBlockDestroying(pointsReward);
         AudioSource.PlayClipAtPoint(DestroyingSound, Camera.main.transform.position);
         Destroy(gameObject);
     }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
     public void OnClickStart()
     {
@@ -11,5 +11,10 @@ public class SceneLoader : MonoBehaviour
     public void OnClickExit()
     {
         Application.Quit();
+    }
+
+    public void OnGameWin()
+    {
+        SceneManager.LoadScene("StartMenu");
     }
 }
