@@ -5,6 +5,13 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField]
+    int damage;
+    public int Damage
+    {
+        get => damage;
+    }
+
+    [SerializeField]
     AudioClip[] paddleCollisionSounds;
     [SerializeField]
     AudioClip[] wallCollisionSounds;

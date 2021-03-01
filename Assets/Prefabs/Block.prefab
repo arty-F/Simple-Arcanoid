@@ -122,5 +122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735f32a3db36d1f45a67c02be6538ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyingSound: {fileID: 8300000, guid: 15641fa07bc95cb41b3c728a3798fd46, type: 3}
+  MaxHp: 50
   pointsReward: 1
+  damagedSprites:
+  - {fileID: 21300000, guid: 3cf1ecbff9977674aa6bab3065e5b26c, type: 3}
+  - {fileID: 21300000, guid: 085b26825611d25428ab80c8bcc70f1b, type: 3}
+  - {fileID: 21300000, guid: a3cca40cf7156334ea54f5ff8dee53b9, type: 3}
+  DestroyingSound: {fileID: 8300000, guid: 15641fa07bc95cb41b3c728a3798fd46, type: 3}
